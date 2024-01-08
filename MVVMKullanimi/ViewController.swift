@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
 
@@ -13,37 +14,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var sayi1Label: UITextField!
     @IBOutlet weak var sayi2Label: UITextField!
     
+    var viewModel = AnasayfaViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelSonuc.text = "0"
+        
+        _ = viewModel.sonuc.subscribe(onNext: { s in
+            self.labelSonuc.text = s
+        })
         
         
     }
 
     @IBAction func topla(_ sender: Any) {
         if let alinanSayi1 = sayi1Label.text,let alinanSayi2 = sayi2Label.text{
-            if let sayi1 = Int(alinanSayi1),let sayi2 = Int(alinanSayi2){
-                
-                let sonuc = sayi1+sayi2
-                
-                labelSonuc.text = "Sonuc : \(sonuc)"
-                
-            }
-            
+            viewModel.toplamaYap(alinanSayi1: alinanSayi1, alinanSayi2: alinanSayi2)
+           
         }
         
     }
     
     @IBAction func carp(_ sender: Any) {
         if let alinanSayi1 = sayi1Label.text,let alinanSayi2 = sayi2Label.text{
-            if let sayi1 = Int(alinanSayi1),let sayi2 = Int(alinanSayi2){
-                
-                let sonuc = sayi1*sayi2
-                
-                labelSonuc.text = "Sonuc : \(sonuc)"
-                
-            }
+            viewModel.carpmaYap(alinanSayi1: alinanSayi1, alinanSayi2: alinanSayi2)
             
         }
     }

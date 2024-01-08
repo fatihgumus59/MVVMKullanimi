@@ -13,7 +13,23 @@
 		02B836DB2B4C65160073EAC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02B836D92B4C65160073EAC7 /* Main.storyboard */; };
 		02B836DD2B4C65170073EAC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B836DC2B4C65170073EAC7 /* Assets.xcassets */; };
 		02B836E02B4C65170073EAC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02B836DE2B4C65170073EAC7 /* LaunchScreen.storyboard */; };
+		02B836E82B4C6D890073EAC7 /* AnasayfaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B836E72B4C6D890073EAC7 /* AnasayfaViewModel.swift */; };
+		02B836F72B4C6F2F0073EAC7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 02B836F62B4C6F2F0073EAC7 /* RxSwift */; };
+		02B836FF2B4C71480073EAC7 /* MatematikRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B836FE2B4C71480073EAC7 /* MatematikRepository.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		02B8370B2B4C78CF0073EAC7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		02B836D02B4C65160073EAC7 /* MVVMKullanimi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMKullanimi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,8 @@
 		02B836DC2B4C65170073EAC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02B836DF2B4C65170073EAC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02B836E12B4C65170073EAC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02B836E72B4C6D890073EAC7 /* AnasayfaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaViewModel.swift; sourceTree = "<group>"; };
+		02B836FE2B4C71480073EAC7 /* MatematikRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatematikRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02B836F72B4C6F2F0073EAC7 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +77,9 @@
 			children = (
 				02B836D32B4C65160073EAC7 /* AppDelegate.swift */,
 				02B836D52B4C65160073EAC7 /* SceneDelegate.swift */,
+				02B836E72B4C6D890073EAC7 /* AnasayfaViewModel.swift */,
 				02B836D72B4C65160073EAC7 /* ViewController.swift */,
+				02B836FE2B4C71480073EAC7 /* MatematikRepository.swift */,
 				02B836D92B4C65160073EAC7 /* Main.storyboard */,
 				02B836DC2B4C65170073EAC7 /* Assets.xcassets */,
 				02B836DE2B4C65170073EAC7 /* LaunchScreen.storyboard */,
@@ -77,12 +98,16 @@
 				02B836CC2B4C65160073EAC7 /* Sources */,
 				02B836CD2B4C65160073EAC7 /* Frameworks */,
 				02B836CE2B4C65160073EAC7 /* Resources */,
+				02B8370B2B4C78CF0073EAC7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MVVMKullanimi;
+			packageProductDependencies = (
+				02B836F62B4C6F2F0073EAC7 /* RxSwift */,
+			);
 			productName = MVVMKullanimi;
 			productReference = 02B836D02B4C65160073EAC7 /* MVVMKullanimi.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 02B836C72B4C65160073EAC7;
+			packageReferences = (
+				02B836E92B4C6F2F0073EAC7 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 02B836D12B4C65160073EAC7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +168,9 @@
 			files = (
 				02B836D82B4C65160073EAC7 /* ViewController.swift in Sources */,
 				02B836D42B4C65160073EAC7 /* AppDelegate.swift in Sources */,
+				02B836E82B4C6D890073EAC7 /* AnasayfaViewModel.swift in Sources */,
 				02B836D62B4C65160073EAC7 /* SceneDelegate.swift in Sources */,
+				02B836FF2B4C71480073EAC7 /* MatematikRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +393,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02B836E92B4C6F2F0073EAC7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02B836F62B4C6F2F0073EAC7 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02B836E92B4C6F2F0073EAC7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02B836C82B4C65160073EAC7 /* Project object */;
 }
